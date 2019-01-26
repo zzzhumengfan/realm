@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>上传图片插件</title>
+    <link rel="stylesheet" href="css/cropper.css">
+</head>
+
+<body>
+<!--图片上传结构-->
+<div class="z_imgcont KKK">
+    <section class="z_file">
+        <img src="img/a11.png" class="z_file_img">
+        <input type="file" name="file" id="file1" class="z_file_input" value=""
+               accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="multiple"/>
+
+    </section>
+</div>
+
+
+<div class="z_imgcont MMM">
+    <section class="z_file">
+        <img src="img/a11.png" class="z_file_img">
+        <input type="file" name="file" id="file2" class="z_file_input" value=""
+               accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="multiple"/>
+
+    </section>
+</div>
+<div class="z_imgcont MMM">
+    <section class="z_file">
+        <img src="img/a11.png" class="z_file_img">
+        <input type="file" name="file" id="file3" class="z_file_input" value=""
+               accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="multiple"/>
+
+    </section>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/cropper.min.js"></script>
+<script src="js/imgUp.js"></script>
+
+<script>
+    $('#file1').imgUp(
+        {
+//              imgCont:'.KKK',
+//              maxLength: 3,
+//              imgCompress: true,
+//              imgCompressWidth: 100,
+//              imgCompressHeight: 500,
+//              imgWh: '1:1',
+//              imgSize: 0.5
+        }
+    );
+    $('#file2').imgUp(
+        {
+//              imgCont:'.MMM',
+//              maxLength: 10,
+//              imgCompress: true,
+//              imgCompressWidth: 100,
+//              imgCompressHeight: 500,
+//              imgWh: '1:1',
+//              imgSize: 0.5
+        }
+    );
+
+    $('#file3').imgUp()
+</script>
+</body>
+
+</html>
